@@ -80,7 +80,7 @@ const Hero = () => {
             <div className="aspect-square relative rounded-full bg-gradient-to-br from-primary/20 to-primary/60 p-1.5 max-w-md mx-auto">
               <div className="h-full w-full rounded-full bg-background flex items-center justify-center overflow-hidden">
                 <img 
-                  src='/src/components/assets/images/ahmad.png'
+                  src='/images/ahmad.png'
                   alt="Developer" 
                   className="w-full h-full object-cover opacity-80"
                   data-aos="flip-right"
