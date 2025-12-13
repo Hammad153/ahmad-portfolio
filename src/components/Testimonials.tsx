@@ -27,7 +27,7 @@ const testimonials: Testimonial[] = [
     content:
       "Ahmad is an exceptional developer who brings both technical expertise and creative problem-solving to the table. His work on our e-commerce platform significantly improved our user conversion rates.",
     rating: 5,
-    initials: "SJ",
+    initials: "UM",
   },
   {
     id: 2,
@@ -37,7 +37,7 @@ const testimonials: Testimonial[] = [
     content:
       "Working with Ahmad was a pleasure. He delivered high-quality code, communicated effectively throughout the project, and went above and beyond to ensure the application was performant and scalable.",
     rating: 5,
-    initials: "MC",
+    initials: "AB",
   },
   {
     id: 3,
@@ -47,7 +47,7 @@ const testimonials: Testimonial[] = [
     content:
       "I was impressed by Ahmad's ability to translate our complex design requirements into a pixel-perfect, responsive frontend. He has a keen eye for detail and a deep understanding of modern web technologies.",
     rating: 5,
-    initials: "JW",
+    initials: "EK",
   },
   {
     id: 4,
@@ -57,7 +57,7 @@ const testimonials: Testimonial[] = [
     content:
       "Highly recommended! Ahmad built our MVP in record time without compromising on quality. His knowledge of the full stack stack helped us make the right architectural decisions early on.",
     rating: 5,
-    initials: "DR",
+    initials: "SR",
   },
 ];
 
