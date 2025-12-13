@@ -25,7 +25,7 @@ const testimonials: Testimonial[] = [
     role: "UI/UX Designer & Product Manager",
     company: "Async Techs",
     content:
-      "Ismail is an exceptional developer who brings both technical expertise and creative problem-solving to the table. His work on our e-commerce platform significantly improved our user conversion rates.",
+      "Ahmad is an exceptional developer who brings both technical expertise and creative problem-solving to the table. His work on our e-commerce platform significantly improved our user conversion rates.",
     rating: 5,
     initials: "SJ",
   },
@@ -35,7 +35,7 @@ const testimonials: Testimonial[] = [
     role: "Fullstack Developer",
     company: "Async Techs",
     content:
-      "Working with Ismail was a pleasure. He delivered high-quality code, communicated effectively throughout the project, and went above and beyond to ensure the application was performant and scalable.",
+      "Working with Ahmad was a pleasure. He delivered high-quality code, communicated effectively throughout the project, and went above and beyond to ensure the application was performant and scalable.",
     rating: 5,
     initials: "MC",
   },
@@ -45,7 +45,7 @@ const testimonials: Testimonial[] = [
     role: "Manager",
     company: "Async Techs",
     content:
-      "I was impressed by Ismail's ability to translate our complex design requirements into a pixel-perfect, responsive frontend. He has a keen eye for detail and a deep understanding of modern web technologies.",
+      "I was impressed by Ahmad's ability to translate our complex design requirements into a pixel-perfect, responsive frontend. He has a keen eye for detail and a deep understanding of modern web technologies.",
     rating: 5,
     initials: "JW",
   },
@@ -55,7 +55,7 @@ const testimonials: Testimonial[] = [
     role: "Founder",
     company: "Async Techs",
     content:
-      "Highly recommended! Ismail built our MVP in record time without compromising on quality. His knowledge of the full stack stack helped us make the right architectural decisions early on.",
+      "Highly recommended! Ahmad built our MVP in record time without compromising on quality. His knowledge of the full stack stack helped us make the right architectural decisions early on.",
     rating: 5,
     initials: "DR",
   },
