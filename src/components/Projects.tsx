@@ -34,7 +34,7 @@ const projects: ProjectType[] = [
     ],
   },
   {
-    id: 1,
+    id: 2,
     title: "Young Mind Academy",
     description:
       "Young Mind Academy, an interactive web application designed to make Social Studies fun, engaging, and accessible for young learners! 🎓🌍",
@@ -59,7 +59,33 @@ const projects: ProjectType[] = [
     ],
   },
   {
-    id: 2,
+    id: 3,
+    title: "Teemis Hub Personal",
+    description:
+      "Teemis Hub Personal, personal shopper connecting the diaspora with home. Buy foodstuffs, pharmaceuticals, clothing, and more",
+    longDescription:
+      "Teemis Hub Personal, ,personal shopper connecting the diaspora with home. Buy foodstuffs, pharmaceuticals, clothing, and more. Teemis Hub Personal is a user-friendly web application that bridges the gap between the diaspora and their home countries. It allows users to easily purchase essential items such as foodstuffs, pharmaceuticals, clothing, and more, providing a seamless shopping experience with reliable delivery services.",
+    image: "/images/teemis-hub.png",
+    liveUrl: "https://teemis-hub.vercel.app/",
+    githubUrl: "https://github.com/Hammad153/",
+    technologies: [
+      "React",
+      "TypeScript",
+      "Supbase",
+      "shadcn",
+      "Redux",
+      "Tailwind CSS",
+    ],
+    features: [
+      "User-friendly product browsing and search",
+      "Secure payment processing",
+      "Easy tracking of orders and deliveries",
+      "Beautiful, responsive design for any device",
+      "Smooth animations and transitions for a modern feel",
+    ],
+  },
+  {
+    id: 4,
     title: "Truth Lie Detector",
     description:
       "An intelligent lie detector that analyzes uploaded images to detect deception. No real life data model is used in this project, This app only generate result randomly",
@@ -80,7 +106,7 @@ const projects: ProjectType[] = [
     ],
   },
   {
-    id: 3,
+    id: 5,
     title: "WorkMateSync App",
     description:
       "A collaborative task manager with real-time updates, drag-and-drop interface, and team workspaces.",
@@ -107,7 +133,7 @@ const projects: ProjectType[] = [
     ],
   },
   {
-    id: 4,
+    id: 6,
     title: "Markdown Previewer",
     description:
       "A live Markdown Previewer that lets users write GitHub-flavored markdown ",
@@ -127,7 +153,7 @@ const projects: ProjectType[] = [
     ],
   },
   {
-    id: 14,
+    id: 7,
     title: "Pokemon Search",
     description:
       "A creature lookup tool that retrieves and displays detailed stats for a specified creature by name or ID.",
@@ -148,7 +174,7 @@ const projects: ProjectType[] = [
     ],
   },
   {
-    id: 15,
+    id: 8,
     title: "My Older Portfolio",
     description: "Demo portfolio built with HTML, CSS JAVASCRIPT",
     image: "/images/older-portfolio.png",
@@ -165,7 +191,7 @@ const projects: ProjectType[] = [
     ],
   },
   {
-    id: 7,
+    id: 9,
     title: "Clock Free App",
     description:
       "A Pomodoro-style timer app that lets users manage productivity through customizable session and break lengths.",
@@ -186,7 +212,7 @@ const projects: ProjectType[] = [
     ],
   },
   {
-    id: 8,
+    id: 10,
     title: "Drum Machine",
     description:
       "An interactive Drum Machine app that plays sounds when users click on drum pads or press assigned keys (Q, W, E, A, S, D, Z, X, C).",
