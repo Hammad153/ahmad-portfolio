@@ -8,6 +8,7 @@ import {
   Layers,
   Palette,
   BarChart3,
+  Smartphone,
 } from "lucide-react";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -79,6 +80,33 @@ const skillCategories: SkillCategory[] = [
     ],
   },
   {
+    id: "mobile",
+    title: "Mobile",
+    icon: <Smartphone className="h-6 w-6" />,
+    skills: [
+      {
+        name: "React Native",
+        level: 85,
+        description: "Cross-platform mobile apps for iOS & Android",
+      },
+      {
+        name: "Expo",
+        level: 85,
+        description: "EAS build, Over-the-air updates, native modules",
+      },
+      {
+        name: "Mobile UI/UX",
+        level: 80,
+        description: "Responsive layouts, gestures, animations",
+      },
+      {
+        name: "State Management",
+        level: 85,
+        description: "Redux Toolkit, Zustand, React Query for mobile",
+      },
+    ],
+  },
+  {
     id: "tools",
     title: "Tools & Other",
     icon: <Layers className="h-6 w-6" />,
@@ -125,7 +153,8 @@ const Skills = () => {
         data-aos-delay="200"
         data-aos-duration="1000"
         data-aos-easing="ease-in-out"
-        data-aos-mirror="true">
+        data-aos-mirror="true"
+      >
         <div className="text-center mb-12 animate-fade-in">
           <h2
             className="text-3xl md:text-4xl font-bold mb-4"
@@ -133,7 +162,8 @@ const Skills = () => {
             data-aos-delay="300"
             data-aos-duration="1000"
             data-aos-easing="ease-in-out"
-            data-aos-mirror="true">
+            data-aos-mirror="true"
+          >
             Skills & Expertise
           </h2>
           <p
@@ -142,7 +172,8 @@ const Skills = () => {
             data-aos-delay="200"
             data-aos-duration="1000"
             data-aos-easing="ease-in-out"
-            data-aos-mirror="true">
+            data-aos-mirror="true"
+          >
             I've developed a broad range of technical skills throughout my
             career. Here's an overview of my capabilities across different
             domains.
@@ -156,7 +187,8 @@ const Skills = () => {
                 <TabsTrigger
                   key={category.id}
                   value={category.id}
-                  className="flex items-center gap-2">
+                  className="flex items-center gap-2"
+                >
                   {category.icon}
                   <span className="hidden sm:inline">{category.title}</span>
                 </TabsTrigger>
@@ -168,7 +200,8 @@ const Skills = () => {
             <TabsContent
               key={category.id}
               value={category.id}
-              className="animate-fade-in">
+              className="animate-fade-in"
+            >
               <Card>
                 <CardContent className="pt-6">
                   <div className="space-y-6">
@@ -198,7 +231,8 @@ const Skills = () => {
         <div className="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
           <Card
             className="animate-bounce-in"
-            style={{ animationDelay: "0.1s" }}>
+            style={{ animationDelay: "0.1s" }}
+          >
             <CardContent className="pt-6">
               <div className="flex items-center gap-4 mb-4">
                 <div className="bg-primary/10 p-3 rounded-full">
@@ -210,7 +244,8 @@ const Skills = () => {
                   data-aos-delay="200"
                   data-aos-duration="1000"
                   data-aos-easing="ease-in-out"
-                  data-aos-mirror="true">
+                  data-aos-mirror="true"
+                >
                   Clean Code
                 </h3>
               </div>
@@ -220,7 +255,8 @@ const Skills = () => {
                 data-aos-delay="200"
                 data-aos-duration="1000"
                 data-aos-easing="ease-in-out"
-                data-aos-mirror="true">
+                data-aos-mirror="true"
+              >
                 I write maintainable, readable, and well-documented code
                 following best practices and design patterns.
               </p>
@@ -229,7 +265,8 @@ const Skills = () => {
 
           <Card
             className="animate-bounce-in"
-            style={{ animationDelay: "0.2s" }}>
+            style={{ animationDelay: "0.2s" }}
+          >
             <CardContent className="pt-6">
               <div className="flex items-center gap-4 mb-4">
                 <div className="bg-primary/10 p-3 rounded-full">
@@ -241,7 +278,8 @@ const Skills = () => {
                   data-aos-delay="200"
                   data-aos-duration="1000"
                   data-aos-easing="ease-in-out"
-                  data-aos-mirror="true">
+                  data-aos-mirror="true"
+                >
                   Full Stack
                 </h3>
               </div>
@@ -251,7 +289,8 @@ const Skills = () => {
                 data-aos-delay="200"
                 data-aos-duration="1000"
                 data-aos-easing="ease-in-out"
-                data-aos-mirror="true">
+                data-aos-mirror="true"
+              >
                 I can handle both frontend and backend development, providing
                 end-to-end solutions for web applications.
               </p>
@@ -260,7 +299,8 @@ const Skills = () => {
 
           <Card
             className="animate-bounce-in"
-            style={{ animationDelay: "0.3s" }}>
+            style={{ animationDelay: "0.3s" }}
+          >
             <CardContent className="pt-6">
               <div className="flex items-center gap-4 mb-4">
                 <div className="bg-primary/10 p-3 rounded-full">
@@ -272,7 +312,8 @@ const Skills = () => {
                   data-aos-delay="200"
                   data-aos-duration="1000"
                   data-aos-easing="ease-in-out"
-                  data-aos-mirror="true">
+                  data-aos-mirror="true"
+                >
                   Problem Solver
                 </h3>
               </div>
@@ -282,7 +323,8 @@ const Skills = () => {
                 data-aos-delay="200"
                 data-aos-duration="1000"
                 data-aos-easing="ease-in-out"
-                data-aos-mirror="true">
+                data-aos-mirror="true"
+              >
                 I approach challenges analytically, finding efficient solutions
                 to complex technical problems.
               </p>

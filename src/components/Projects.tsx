@@ -174,23 +174,6 @@ const projects: ProjectType[] = [
     ],
   },
   {
-    id: 8,
-    title: "My Older Portfolio",
-    description: "Demo portfolio built with HTML, CSS JAVASCRIPT",
-    image: "/images/older-portfolio.png",
-    liveUrl: "https://hamadportfo.netlify.app/",
-    githubUrl: "https://github.com/Hammad153/Javascript-projects",
-    technologies: ["html", "css", "Javascript"],
-    features: [
-      "White and Dark Mode",
-      "Experience Section",
-      "About Section",
-      "Contact Section",
-      "Projects Section",
-      "Traceable Mouse Icon",
-    ],
-  },
-  {
     id: 9,
     title: "Clock Free App",
     description:
@@ -255,15 +238,15 @@ const Projects = () => {
           if (activeCategory === "frontend") {
             return project.technologies.some((tech) =>
               ["React", "HTML", "CSS", "javascript", "Tailwindcss"].includes(
-                tech
-              )
+                tech,
+              ),
             );
           }
           if (activeCategory === "fullstack") {
             return project.technologies.some((tech) =>
               ["Node.js", "ejs", "Express", "MongoDB", "PostgreSQL"].includes(
-                tech
-              )
+                tech,
+              ),
             );
           }
           return true;
