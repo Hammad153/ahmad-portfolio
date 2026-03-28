@@ -28,11 +28,11 @@ const Contact = () => {
 
   const handleSubmit = async (
     values: typeof contactInitialValues,
-    { resetForm, setSubmitting }: any
+    { resetForm, setSubmitting }: any,
   ) => {
-    const serviceId = import.meta.env.VITE_EMAIL_JS_SERVICE_ID;
-    const templateId = import.meta.env.VITE_EMAIL_JS_TEMPLATE_ID;
-    const publicKey = import.meta.env.VITE_EMAIL_JS_PUBLIC_KEY;
+    const serviceId = process.env.NEXT_PUBLIC_EMAIL_JS_SERVICE_ID;
+    const templateId = process.env.NEXT_PUBLIC_EMAIL_JS_TEMPLATE_ID;
+    const publicKey = process.env.NEXT_PUBLIC_EMAIL_JS_PUBLIC_KEY;
 
     const templateParams = {
       from_name: values.name,
@@ -47,7 +47,7 @@ const Contact = () => {
         serviceId,
         templateId,
         templateParams,
-        publicKey
+        publicKey,
       );
       console.log("Email sent successfully", res);
       toast({
