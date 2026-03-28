@@ -30,19 +30,19 @@ const Contact = () => {
     values: typeof contactInitialValues,
     { resetForm, setSubmitting }: any,
   ) => {
-    const serviceId = process.env.NEXT_PUBLIC_EMAIL_JS_SERVICE_ID;
-    const templateId = process.env.NEXT_PUBLIC_EMAIL_JS_TEMPLATE_ID;
-    const publicKey = process.env.NEXT_PUBLIC_EMAIL_JS_PUBLIC_KEY;
-
-    const templateParams = {
-      from_name: values.name,
-      from_email: values.email,
-      to_name: "Ahmad Portfolio",
-      message: values.message,
-      subject: values.subject,
-    };
-
     try {
+      const serviceId = import.meta.env.VITE_EMAIL_JS_SERVICE_ID;
+      const templateId = import.meta.env.VITE_EMAIL_JS_TEMPLATE_ID;
+      const publicKey = import.meta.env.VITE_EMAIL_JS_PUBLIC_KEY;
+
+      const templateParams = {
+        from_name: values.name,
+        from_email: values.email,
+        to_name: "Ahmad Portfolio",
+        message: values.message,
+        subject: values.subject,
+      };
+
       const res = await emailjs.send(
         serviceId,
         templateId,
