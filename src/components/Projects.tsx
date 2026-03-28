@@ -174,7 +174,7 @@ const projects: ProjectType[] = [
     ],
   },
   {
-    id: 9,
+    id: 8,
     title: "Clock Free App",
     description:
       "A Pomodoro-style timer app that lets users manage productivity through customizable session and break lengths.",
@@ -195,7 +195,7 @@ const projects: ProjectType[] = [
     ],
   },
   {
-    id: 10,
+    id: 9,
     title: "Drum Machine",
     description:
       "An interactive Drum Machine app that plays sounds when users click on drum pads or press assigned keys (Q, W, E, A, S, D, Z, X, C).",
