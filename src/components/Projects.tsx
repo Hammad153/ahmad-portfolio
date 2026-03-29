@@ -49,6 +49,7 @@ const Projects = () => {
                 "NestJs",
                 "MongoDB",
                 "PostgreSQL",
+                "Supabase",
               ].includes(tech),
             );
           }
