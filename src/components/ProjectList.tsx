@@ -60,6 +60,39 @@ export const ProjectList: ProjectType[] = [
   },
   {
     id: 3,
+    title: "SME Business Management System",
+    description:
+      "A comprehensive web application designed to help Small and Medium Enterprises (SMEs) manage operations, track finances, and streamline business processes efficiently.",
+    longDescription:
+      "The SME Business Management System is a robust web application built to support small and medium-sized businesses in managing their day-to-day operations with ease. It provides tools for handling inventory, tracking sales, managing customers, and monitoring financial activities in real-time.\n\nWith a clean and intuitive interface, business owners can gain insights into their performance, make data-driven decisions, and improve overall productivity. The system is designed to be scalable, secure, and responsive, ensuring smooth usage across devices while simplifying complex business workflows.",
+    image: "/images/sme.png",
+    liveUrl: "",
+    githubUrl: "https://github.com/Hammad153/",
+    technologies: [
+      "Next.js",
+      "NestJS",
+      "TypeScript",
+      "Node.js",
+      "PostgreSQL",
+      "Prisma",
+      "Tailwind CSS",
+      "shadcn",
+      "Antdesign",
+      "Context API",
+    ],
+    features: [
+      "Inventory and stock management",
+      "Sales and transaction tracking",
+      "Customer management system",
+      "Financial insights and reporting dashboard",
+      "Responsive and user-friendly interface",
+      "Secure and scalable backend architecture",
+      "Payroll management and employee tracking",
+      "Role-based access control for different user types",
+    ],
+  },
+  {
+    id: 4,
     title: "Young Mind Academy",
     description:
       "Young Mind Academy, an interactive web application designed to make Social Studies fun, engaging, and accessible for young learners! 🎓🌍",
@@ -87,7 +120,7 @@ export const ProjectList: ProjectType[] = [
     ],
   },
   {
-    id: 4,
+    id: 5,
     title: "Teemis Hub Personal",
     description:
       "Teemis Hub Personal, personal shopper connecting the diaspora with home. Buy foodstuffs, pharmaceuticals, clothing, and more",
@@ -113,7 +146,7 @@ export const ProjectList: ProjectType[] = [
     ],
   },
   {
-    id: 5,
+    id: 6,
     title: "Truth Lie Detector",
     description:
       "An intelligent lie detector that analyzes uploaded images to detect deception. No real life data model is used in this project, This app only generate result randomly",
@@ -134,7 +167,7 @@ export const ProjectList: ProjectType[] = [
     ],
   },
   {
-    id: 6,
+    id: 7,
     title: "WorkMateSync App",
     description:
       "A collaborative task manager with real-time updates, drag-and-drop interface, and team workspaces.",
@@ -161,7 +194,7 @@ export const ProjectList: ProjectType[] = [
     ],
   },
   {
-    id: 7,
+    id: 8,
     title: "Markdown Previewer",
     description:
       "A live Markdown Previewer that lets users write GitHub-flavored markdown ",
@@ -181,7 +214,7 @@ export const ProjectList: ProjectType[] = [
     ],
   },
   {
-    id: 8,
+    id: 9,
     title: "Pokemon Search",
     description:
       "A creature lookup tool that retrieves and displays detailed stats for a specified creature by name or ID.",
@@ -202,7 +235,7 @@ export const ProjectList: ProjectType[] = [
     ],
   },
   {
-    id: 9,
+    id: 10,
     title: "Clock Free App",
     description:
       "A Pomodoro-style timer app that lets users manage productivity through customizable session and break lengths.",
@@ -223,7 +256,7 @@ export const ProjectList: ProjectType[] = [
     ],
   },
   {
-    id: 10,
+    id: 11,
     title: "Drum Machine",
     description:
       "An interactive Drum Machine app that plays sounds when users click on drum pads or press assigned keys (Q, W, E, A, S, D, Z, X, C).",
