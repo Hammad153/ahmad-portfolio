@@ -1,5 +1,4 @@
 import { ArrowRight, Github, Linkedin, Mail } from "lucide-react";
-import { Button } from "@/components/ui/button";
 import { useEffect } from "react";
 
 const Hero = () => {
@@ -13,7 +12,7 @@ const Hero = () => {
           }
         });
       },
-      { threshold: 0.1 }
+      { threshold: 0.1 },
     );
 
     document.querySelectorAll(".reveal").forEach((el) => observer.observe(el));
@@ -334,7 +333,8 @@ const Hero = () => {
 
       <section
         id="about"
-        className="hero-container min-h-screen flex flex-col justify-center pt-24 pb-16 relative">
+        className="hero-container min-h-screen flex flex-col justify-center pt-24 pb-16 relative"
+      >
         {/* Background Effects */}
         <div className="hero-bg-gradient"></div>
         <div className="hero-bg-grid"></div>
@@ -379,7 +379,8 @@ const Hero = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hero-social-link"
-                  aria-label="GitHub">
+                  aria-label="GitHub"
+                >
                   <Github size={20} />
                 </a>
                 <a
@@ -387,13 +388,15 @@ const Hero = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hero-social-link"
-                  aria-label="LinkedIn">
+                  aria-label="LinkedIn"
+                >
                   <Linkedin size={20} />
                 </a>
                 <a
                   href="mailto:hammadismail1546@gmail.com"
                   className="hero-social-link"
-                  aria-label="Email">
+                  aria-label="Email"
+                >
                   <Mail size={20} />
                 </a>
               </div>
@@ -401,7 +404,7 @@ const Hero = () => {
               {/* Stats Section */}
               <div className="hero-stats reveal reveal-5">
                 <div className="hero-stat">
-                  <div className="hero-stat-value">4+</div>
+                  <div className="hero-stat-value">5+</div>
                   <div className="hero-stat-label">Years Experience</div>
                 </div>
                 <div className="hero-stat">
@@ -409,7 +412,7 @@ const Hero = () => {
                   <div className="hero-stat-label">Projects Completed</div>
                 </div>
                 <div className="hero-stat">
-                  <div className="hero-stat-value">5+</div>
+                  <div className="hero-stat-value">6+</div>
                   <div className="hero-stat-label">Happy Clients</div>
                 </div>
               </div>
