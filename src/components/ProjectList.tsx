@@ -97,7 +97,7 @@ export const ProjectList: ProjectType[] = [
     technologies: [
       "React",
       "TypeScript",
-      "Supbase",
+      "Supabase",
       "shadcn",
       "Redux",
       "Tailwind CSS",
