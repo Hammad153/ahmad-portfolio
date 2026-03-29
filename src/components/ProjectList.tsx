@@ -30,11 +30,11 @@ export const ProjectList: ProjectType[] = [
   },
   {
     id: 2,
-    title: "EduNexus",
+    title: "EduNexus LMS",
     description:
-      "EduNexus, an interactive web application designed to make Social Studies fun, engaging, and accessible for young learners! 🎓🌍",
+      "EduNexus is a modern Learning Management System (LMS) designed to streamline academic activities, enhance student engagement, and simplify institutional management.",
     longDescription:
-      "EduNexus, an interactive web application designed to make Social Studies fun, engaging, and accessible for young learners! 🎓🌍This platform was built with love and modern tech to help students explore key topics in history, geography, culture, government, and civic responsibility—all through an intuitive and responsive interface",
+      "EduNexus is a full-featured Learning Management System (LMS) built to provide a seamless digital learning experience for institutions, educators, and students. The platform supports structured course delivery, role-based access control, real-time updates, and integrated communication tools. \n\nDesigned with scalability and usability in mind, EduNexus enables administrators to manage departments, classes, and payments efficiently, while students can easily access lessons, track progress, and stay updated with notifications. Built using modern technologies, it delivers a fast, responsive, and intuitive user experience across all devices.",
     image: "/images/edunexus.png",
     liveUrl: "https://tryedunexus.vercel.app/",
     githubUrl: "https://github.com/Hammad153/",
@@ -50,10 +50,12 @@ export const ProjectList: ProjectType[] = [
       "Resend",
     ],
     features: [
-      "Easy-to-navigate lessons tailored for young minds",
-      "Interactive quizzes to reinforce learning",
-      "Beautiful, responsive design for any device",
-      "Smooth animations and transitions for a modern feel",
+      "Role-based access control (Admin, Instructor, Student)",
+      "Course and class management system",
+      "Real-time updates and notifications",
+      "Payment configuration by department, class, or cohort",
+      "Interactive and responsive user interface",
+      "Secure authentication and authorization",
     ],
   },
   {
