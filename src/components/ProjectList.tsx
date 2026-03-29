@@ -73,6 +73,9 @@ export const ProjectList: ProjectType[] = [
       "shadcn",
       "Redux",
       "Tailwind CSS",
+      "MongoDB",
+      "Express",
+      "Node.js",
     ],
     features: [
       "Easy-to-navigate lessons tailored for young minds",
