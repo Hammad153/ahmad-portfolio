@@ -1,16 +1,18 @@
 import { useState } from "react";
 import ProjectCard from "./ProjectCard";
 import { Button } from "@/components/ui/button";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import { ProjectList } from "./ProjectList";
 
-const projectCategories = [
-  { value: "all", label: "All Projects" },
-  { value: "frontend", label: "Frontend" },
-  { value: "fullstack", label: "Full Stack" },
+const cardDelayClasses = [
+  "[animation-delay:0s]",
+  "[animation-delay:0.1s]",
+  "[animation-delay:0.2s]",
+  "[animation-delay:0.3s]",
+  "[animation-delay:0.4s]",
+  "[animation-delay:0.5s]",
 ];
 
 const Projects = () => {
@@ -19,45 +21,9 @@ const Projects = () => {
   }, []);
 
   const [visibleProjects, setVisibleProjects] = useState(6);
-  const [activeCategory, setActiveCategory] = useState("all");
-
-  const filteredProjects =
-    activeCategory === "all"
-      ? ProjectList
-      : ProjectList.filter((project) => {
-          if (activeCategory === "frontend") {
-            return project.technologies.some((tech) =>
-              [
-                "React",
-                "HTML",
-                "CSS",
-                "javascript",
-                "TypeScript",
-                "shadcn",
-                "Redux",
-                "Tailwind CSS",
-                "Firebase",
-              ].includes(tech),
-            );
-          }
-          if (activeCategory === "fullstack") {
-            return project.technologies.some((tech) =>
-              [
-                "Node.js",
-                "ejs",
-                "Express",
-                "NestJs",
-                "MongoDB",
-                "PostgreSQL",
-                "Supabase",
-              ].includes(tech),
-            );
-          }
-          return true;
-        });
 
   const showMoreProjects = () => {
-    setVisibleProjects((prev) => Math.min(prev + 3, filteredProjects.length));
+    setVisibleProjects((prev) => Math.min(prev + 3, ProjectList.length));
   };
 
   const showLessProjects = () => {
@@ -90,43 +56,15 @@ const Projects = () => {
           </p>
         </div>
 
-        <Tabs
-          defaultValue="all"
-          className="mb-8"
-          onValueChange={(value) => {
-            setActiveCategory(value);
-            setVisibleProjects(6);
-          }}>
-          <div className="flex justify-center mb-8">
-            <TabsList>
-              {projectCategories.map((category) => (
-                <TabsTrigger key={category.value} value={category.value}>
-                  {category.label}
-                </TabsTrigger>
-              ))}
-            </TabsList>
-          </div>
-
-          {projectCategories.map((category) => (
-            <TabsContent
-              key={category.value}
-              value={category.value}
-              className="animate-fade-in">
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {filteredProjects
-                  .slice(0, visibleProjects)
-                  .map((project, index) => (
-                    <div
-                      key={project.id}
-                      className="animate-bounce-in"
-                      style={{ animationDelay: `${index * 0.1}s` }}>
-                      <ProjectCard project={project} index={index} />
-                    </div>
-                  ))}
-              </div>
-            </TabsContent>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {ProjectList.slice(0, visibleProjects).map((project, index) => (
+            <div
+              key={project.id}
+              className={`animate-bounce-in ${cardDelayClasses[index % cardDelayClasses.length]}`}>
+              <ProjectCard project={project} index={index} />
+            </div>
           ))}
-        </Tabs>
+        </div>
 
         <div
           className="flex justify-center mt-8"
@@ -135,7 +73,7 @@ const Projects = () => {
           data-aos-duration="1000"
           data-aos-easing="ease-in-out"
           data-aos-mirror="true">
-          {visibleProjects < filteredProjects.length ? (
+          {visibleProjects < ProjectList.length ? (
             <Button onClick={showMoreProjects}>Load More Projects</Button>
           ) : visibleProjects > 4 ? (
             <Button variant="outline" onClick={showLessProjects}>
