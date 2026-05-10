@@ -1,10 +1,4 @@
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
@@ -12,6 +6,13 @@ import { useToast } from "@/components/ui/use-toast";
 import { MailIcon, PhoneIcon, MapPin, Send } from "lucide-react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 import { useEffect } from "react";
 import { contactInitialValues } from "@/validations/schemas";
 import { Formik, Form, Field } from "formik";
