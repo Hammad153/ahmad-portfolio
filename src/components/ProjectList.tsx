@@ -8,7 +8,7 @@ export const ProjectList: ProjectType[] = [
       "YS Digital Haven, an interactive e-commerce web application for all of your digital needs! 🛒💻",
     longDescription:
       "YS Digital Haven, an interactive e-commerce web application for all of your digital needs! 🛒💻This platform was built with love and modern tech to provide a seamless shopping experience for users looking to purchase digital products such as eBooks, software, courses, and more. With a user-friendly interface, secure payment options, and personalized recommendations, YS Digital Haven is your go-to destination for all things digital.",
-    image: "/images/ys-success.png",
+    image: "/images/shopwithyss.png",
     liveUrl: "https://shopwithyss.com",
     githubUrl: "https://github.com/Hammad153/",
     technologies: [
@@ -93,6 +93,26 @@ export const ProjectList: ProjectType[] = [
   },
   {
     id: 4,
+    title: "Ahmad QRCode Generator",
+    description:
+      "A simple and efficient QR code generator built with React, allowing users to create custom QR codes for various purposes.",
+    longDescription:
+      "Ahmad QRCode Generator is a user-friendly web application designed to help users create custom QR codes quickly and easily. Built with React, this tool allows you to generate QR codes for URLs, text, contact information, and more. With a clean interface and real-time preview, you can customize the design of your QR code by adjusting colors, adding logos, and selecting different styles. Whether you need a QR code for marketing materials, business cards, or personal use, Ahmad QRCode Generator provides a seamless experience to meet your needs.",
+    image: "/images/qrcodegenerator.png",
+    liveUrl: "https://ahmadqr.vercel.app/",
+    githubUrl: "https://github.com/Hammad153/",
+    technologies: ["React", "TypeScript", "Tailwind CSS", "shadcn"],
+    features: [
+      "Generate QR codes for URLs, text, contact info, and more",
+      "Real-time preview of QR code design",
+      "Customizable colors and styles",
+      "Option to add logos or images to QR codes",
+      "Download generated QR codes in various formats (PNG, SVG)",
+      "User-friendly interface for quick generation",
+    ],
+  },
+  {
+    id: 5,
     title: "Teemis Hub Personal",
     description:
       "Teemis Hub Personal, personal shopper connecting the diaspora with home. Buy foodstuffs, pharmaceuticals, clothing, and more",
