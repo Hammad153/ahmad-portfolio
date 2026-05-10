@@ -40,7 +40,8 @@ const Projects = () => {
             data-aos-delay="300"
             data-aos-duration="1000"
             data-aos-easing="ease-in-out"
-            data-aos-mirror="true">
+            data-aos-mirror="true"
+          >
             My Projects
           </h2>
           <p
@@ -49,7 +50,8 @@ const Projects = () => {
             data-aos-delay="200"
             data-aos-duration="1000"
             data-aos-easing="ease-in-out"
-            data-aos-mirror="true">
+            data-aos-mirror="true"
+          >
             Explore my latest web development projects. Each one was carefully
             crafted with attention to detail, user experience, and clean code
             principles.
@@ -60,7 +62,8 @@ const Projects = () => {
           {ProjectList.slice(0, visibleProjects).map((project, index) => (
             <div
               key={project.id}
-              className={`animate-bounce-in ${cardDelayClasses[index % cardDelayClasses.length]}`}>
+              className={`animate-bounce-in ${cardDelayClasses[index % cardDelayClasses.length]}`}
+            >
               <ProjectCard project={project} index={index} />
             </div>
           ))}
@@ -72,7 +75,8 @@ const Projects = () => {
           data-aos-delay="200"
           data-aos-duration="1000"
           data-aos-easing="ease-in-out"
-          data-aos-mirror="true">
+          data-aos-mirror="true"
+        >
           {visibleProjects < ProjectList.length ? (
             <Button onClick={showMoreProjects}>Load More Projects</Button>
           ) : visibleProjects > 4 ? (

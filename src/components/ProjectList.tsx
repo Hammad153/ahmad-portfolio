@@ -30,12 +30,12 @@ export const ProjectList: ProjectType[] = [
   },
   {
     id: 2,
-    title: "EduNexus LMS",
+    title: "IngestLMS",
     description:
-      "EduNexus is a modern Learning Management System (LMS) designed to streamline academic activities, enhance student engagement, and simplify institutional management.",
+      "IngestLMS is a modern Learning Management System (LMS) designed to streamline academic activities, enhance student engagement, and simplify institutional management.",
     longDescription:
-      "EduNexus is a full-featured Learning Management System (LMS) built to provide a seamless digital learning experience for institutions, educators, and students. The platform supports structured course delivery, role-based access control, real-time updates, and integrated communication tools. \n\nDesigned with scalability and usability in mind, EduNexus enables administrators to manage departments, classes, and payments efficiently, while students can easily access lessons, track progress, and stay updated with notifications. Built using modern technologies, it delivers a fast, responsive, and intuitive user experience across all devices.",
-    image: "/images/edunexus.png",
+      "IngestLMS is a full-featured Learning Management System (LMS) built to provide a seamless digital learning experience for institutions, educators, and students. The platform supports structured course delivery, role-based access control, real-time updates, and integrated communication tools. \n\nDesigned with scalability and usability in mind, IngestLMS enables administrators to manage departments, classes, and payments efficiently, while students can easily access lessons, track progress, and stay updated with notifications. Built using modern technologies, it delivers a fast, responsive, and intuitive user experience across all devices.",
+    image: "/images/ingestlms.png",
     liveUrl: "https://app.ingestlms.com.ng/",
     githubUrl: "https://github.com/Hammad153/",
     technologies: [
