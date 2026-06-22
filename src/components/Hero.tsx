@@ -425,7 +425,7 @@ const Hero = () => {
                   <div className="hero-image-border"></div>
                   <div className="hero-image-inner">
                     <img
-                      src="/images/ahmad.png"
+                      src="/images/ahmad2.jpeg"
                       alt="Ismail Hammad - Full Stack Developer"
                       className="hero-image"
                     />
